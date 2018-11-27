@@ -13,9 +13,9 @@ class Stack {
   }
 
   push(item) {
-    this.items.push(item);
     this.count = this.count + 1;
-  }
+    this.items.push(item);
+   }
 
   pop() {
     if (this.count > 0) {
@@ -42,8 +42,27 @@ describe('stack test', () => {
 
   test('should push elements to stack in order', () => {
     const actual = myStack.items;
-    const expected = [3, 2, 1];
+    const expected = [1, 2, 3];
 
     expect(actual).toEqual(expected);
   });
+
+  test('should return the length of the stack' ,()=>{
+    const actual = myStack.getLength();
+    const expected = 3;
+    expect(actual).toEqual(expected);
+  })
+
+  test('should pop elements from the stack' ,()=>{
+    const actual = myStack.pop();
+    const expected = 3;
+
+    expect(actual).toEqual(expected);
+  });
+
+  test('should return the top element of stack' ,()=>{
+    const actual = myStack.peek();
+    const expected = 2;
+  })
 });
+
