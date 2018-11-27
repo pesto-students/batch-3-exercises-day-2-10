@@ -1,5 +1,7 @@
-import { yourName } from './yourName';
+import { yourName } from "./yourName";
 
-describe('Write your name in the test', () => {
-  expect(yourName()).toBe('Write your name here!');
+describe("Write your name in the test", () => {
+    test("should return name", () => {
+        expect(yourName()).toBe("Shikhar Dubey");
+    });
 });

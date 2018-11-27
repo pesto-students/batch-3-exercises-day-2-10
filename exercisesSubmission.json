@@ -1,11 +1,11 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
-  "exercises": {
-    "your-name": {
-      "completed": false,
-      "rating": null
+    "name": "Shikhar Dubey",
+    "email": "shikhar.db@gmail.com",
+    "batch": "3",
+    "exercises": {
+        "your-name": {
+            "completed": true,
+            "rating": 1
+        }
     }
-  }
 }
