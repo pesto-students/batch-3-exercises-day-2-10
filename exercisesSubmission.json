@@ -1,55 +1,55 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
-  "exercises": {
-    "array-sum-test": {
-      "completed": false,
-      "rating": null
-    },
-    "create-object-test": {
-      "completed": false,
-      "rating": null
-    },
-    "every-nth-test": {
-      "completed": false,
-      "rating": null
-    },
-    "factorial-test": {
-      "completed": false,
-      "rating": null
-    },
-    "get-name-test": {
-      "completed": false,
-      "rating": null
-    },
-    "logical-operators": {
-      "completed": false,
-      "rating": null
-    },
-    "number-sum-test": {
-      "completed": false,
-      "rating": null
-    },
-    "return-a-function-test": {
-      "completed": false,
-      "rating": null
-    },
-    "return-a-string-test": {
-      "completed": false,
-      "rating": null
-    },
-    "return-true-test": {
-      "completed": false,
-      "rating": null
-    },
-    "stack-test": {
-      "completed": false,
-      "rating": null
-    },
-    "sum-test": {
-      "completed": false,
-      "rating": null
+    "name": "Shikhar Dubey",
+    "email": "shikhar.db@gmail.com",
+    "batch": "3",
+    "exercises": {
+        "array-sum-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "create-object-test": {
+            "completed": true,
+            "rating": 2
+        },
+        "every-nth-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "factorial-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "get-name-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "logical-operators": {
+            "completed": true,
+            "rating": 1
+        },
+        "number-sum-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "return-a-function-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "return-a-string-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "return-true-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "stack-test": {
+            "completed": true,
+            "rating": 1
+        },
+        "sum-test": {
+            "completed": true,
+            "rating": 1
+        }
     }
-  }
 }
