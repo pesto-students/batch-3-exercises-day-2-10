@@ -1,5 +1,5 @@
 function applyOperator(...args) {
-    if (args.length === 2) return 0;
+    if (args.length < 2) return 0;
 
     var operator = args[0].toString();
     var temp = 0;

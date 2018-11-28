@@ -36,8 +36,8 @@
             "rating": null
         },
         "apply-operator": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 3
         },
         "boo-who": {
             "completed": true,
