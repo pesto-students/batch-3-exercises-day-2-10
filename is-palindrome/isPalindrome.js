@@ -1,8 +1,15 @@
+function isPalindrome(str) {
+    var newString = str
+        .toString()
+        .toLowerCase()
+        .replace(/[\W_]/g, "");
 
-function isPalindrome(...args) {
-  return args;
+    var reverse = newString
+        .split("")
+        .reverse()
+        .join("");
+
+    return newString == reverse;
 }
 
-export {
-  isPalindrome,
-};
+export { isPalindrome };
