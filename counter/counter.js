@@ -1,6 +1,9 @@
+var a =0;
 
-function counter(...args) {
-  return args;
+function counter() {
+  if(arguments.length===0)
+  return ()=> a=a+1;
+
 }
 
 export {
