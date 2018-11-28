@@ -8,8 +8,8 @@
             "rating": 1
         },
         "is-palindrome": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 2
         },
         "diff-array": {
             "completed": true,
@@ -56,8 +56,8 @@
             "rating": null
         },
         "steamroll-array": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 3
         },
         "rotated-string": {
             "completed": false,
