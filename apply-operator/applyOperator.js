@@ -7,7 +7,7 @@ function applyOperator() {
   if(arguments.length === 2)
   return arguments[1];
 
-  var result =0;
+  var result = 0;
   switch (arguments[0]){
     case '+':
       for(var i = 1; i<arguments.length;i++)
