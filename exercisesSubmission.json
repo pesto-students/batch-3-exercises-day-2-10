@@ -4,8 +4,8 @@
   "batch": "Batch 3",
   "exercises": {
     "reverse-string": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "is-palindrome": {
       "completed": false,
@@ -32,16 +32,16 @@
       "rating": null
     },
     "repeat-string-num-times": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "binary-agent": {
       "completed": false,
       "rating": null
     },
     "bouncer": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "sum-all": {
       "completed": false,
