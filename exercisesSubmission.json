@@ -36,8 +36,8 @@
             "rating": null
         },
         "binary-agent": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 3
         },
         "bouncer": {
             "completed": false,
@@ -48,8 +48,8 @@
             "rating": null
         },
         "convert-to-roman": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 3
         },
         "large-of-four": {
             "completed": false,
