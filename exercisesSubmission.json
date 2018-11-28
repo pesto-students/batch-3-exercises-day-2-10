@@ -1,15 +1,15 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Abhinav Kumar",
+  "email": "abhinav95@hotmail.com",
+  "batch": "3",
   "exercises": {
     "reverse-string": {
       "completed": false,
       "rating": null
     },
     "is-palindrome": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "diff-array": {
       "completed": false,
@@ -40,8 +40,8 @@
       "rating": null
     },
     "bouncer": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 5
     },
     "sum-all": {
       "completed": false,
