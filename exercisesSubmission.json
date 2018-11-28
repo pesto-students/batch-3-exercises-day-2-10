@@ -16,8 +16,8 @@
             "rating": 1
         },
         "is-triangle": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 2
         },
         "counter": {
             "completed": false,
