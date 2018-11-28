@@ -1,8 +1,10 @@
+function binaryAgent(str) {
+    var string = "";
+    str.split(" ").map(function(binary) {
+        string += String.fromCharCode(parseInt(binary, 2));
+    });
 
-function binaryAgent(...args) {
-  return args;
+    return string;
 }
 
-export {
-  binaryAgent,
-};
+export { binaryAgent };
