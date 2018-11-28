@@ -1,8 +1,5 @@
-
 function counter(...args) {
-  return args;
+    return args;
 }
 
-export {
-  counter,
-};
+export { counter };
