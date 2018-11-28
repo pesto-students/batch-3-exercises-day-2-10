@@ -4,8 +4,8 @@
     "batch": "3",
     "exercises": {
         "factorial": {
-            "completed": false,
-            "rating": 1
+            "completed": true,
+            "rating": 2
         },
         "is-odd": {
             "completed": true,
@@ -13,7 +13,7 @@
         },
         "is-even": {
             "completed": true,
-            "rating": null
+            "rating": 1
         },
         "is-triangle": {
             "completed": false,

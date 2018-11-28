@@ -1,8 +1,7 @@
+function factorial(num) {
+    if (num === 0) return 1;
 
-function factorial(...args) {
-  return args;
+    return num * factorial(num - 1);
 }
 
-export {
-  factorial,
-};
+export { factorial };
