@@ -4,8 +4,8 @@
     "batch": "3",
     "exercises": {
         "reverse-string": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 1
         },
         "is-palindrome": {
             "completed": false,
@@ -32,8 +32,8 @@
             "rating": null
         },
         "repeat-string-num-times": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 1
         },
         "binary-agent": {
             "completed": true,
