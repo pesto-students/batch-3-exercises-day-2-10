@@ -1,35 +1,35 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
-  "exercises": {
-    "square-numbers-array": {
-      "completed": false,
-      "rating": null
-    },
-    "savings-account": {
-      "completed": false,
-      "rating": null
-    },
-    "request-validator": {
-      "completed": false,
-      "rating": null
-    },
-    "memoize": {
-      "completed": false,
-      "rating": null
-    },
-    "curry": {
-      "completed": false,
-      "rating": null
-    },
-    "account-dataset": {
-      "completed": false,
-      "rating": null
-    },
-    "alternating-characters": {
-      "completed": false,
-      "rating": null
+    "name": "Shikhar Dubey",
+    "email": "shikhar.db@gmail.com",
+    "batch": "3",
+    "exercises": {
+        "square-numbers-array": {
+            "completed": false,
+            "rating": null
+        },
+        "savings-account": {
+            "completed": true,
+            "rating": 1
+        },
+        "request-validator": {
+            "completed": false,
+            "rating": null
+        },
+        "memoize": {
+            "completed": false,
+            "rating": null
+        },
+        "curry": {
+            "completed": false,
+            "rating": null
+        },
+        "account-dataset": {
+            "completed": false,
+            "rating": null
+        },
+        "alternating-characters": {
+            "completed": false,
+            "rating": null
+        }
     }
-  }
 }
