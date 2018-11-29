@@ -52,12 +52,12 @@
             "rating": null
         },
         "object-invert": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 3
         },
         "object-defaults": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 1
         },
         "user-check-password": {
             "completed": false,
