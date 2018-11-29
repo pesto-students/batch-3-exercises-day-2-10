@@ -1,8 +1,7 @@
-
-function dropElements(...args) {
-  return args;
+function dropElements(arr, num) {
+    arr = arr.filter(function(n) {
+        return arr, num;
+    });
 }
 
-export {
-  dropElements,
-};
+export { dropElements };
