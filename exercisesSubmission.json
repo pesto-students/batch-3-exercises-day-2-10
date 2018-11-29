@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Ankaj Goyal",
+  "email": "ankajgoyal4@gmail.com",
+  "batch": "Batch3",
   "exercises": {
     "slasher": {
       "completed": false,
@@ -36,28 +36,28 @@
       "rating": null
     },
     "object-keys": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "object-values": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "map-object": {
       "completed": false,
       "rating": null
     },
     "object-pairs": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "object-invert": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "object-defaults": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "user-check-password": {
       "completed": false,
