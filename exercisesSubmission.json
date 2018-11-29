@@ -4,8 +4,8 @@
     "batch": "3",
     "exercises": {
         "slasher": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 1
         },
         "chunk-array-in-groups": {
             "completed": false,
@@ -40,8 +40,8 @@
             "rating": 1
         },
         "object-values": {
-            "completed": false,
-            "rating": null
+            "completed": true,
+            "rating": 1
         },
         "map-object": {
             "completed": false,
