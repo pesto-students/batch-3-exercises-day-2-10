@@ -1,4 +1,4 @@
-import { SavingsAccount } from './SavingsAccount';
+import { savingsAccount } from './savingsAccount';
 
 describe('SavingsAccount', () => {
   test('SavingsAccount constructs the proper object', () => {
@@ -9,23 +9,23 @@ describe('SavingsAccount', () => {
       _lastName: 'Kohli',
       products: [],
     };
-    const actualAccount = new SavingsAccount('123456', 'kohli@gmail.com', 'Virat', 'Kohli');
+    const actualAccount = new savingsAccount('123456', 'kohli@gmail.com', 'Virat', 'Kohli');
     expect(actualAccount).toEqual(myAccount);
   });
 
   test('should throw error if account number length is not equal to 6', () => {
-    expect(() => new SavingsAccount('123', 'kohli@gmail.com', 'Virat', 'Kohli')).toThrow('Account Number must be a 6-digit number');
+    expect(() => new savingsAccount('123', 'kohli@gmail.com', 'Virat', 'Kohli')).toThrow('Account Number must be a 6-digit number');
   });
 
   test('should throw error if account number length is not equal to 6', () => {
-    expect(() => new SavingsAccount('123456', 'kohli@', 'Virat', 'Kohli')).toThrow('Invalid e-mail');
+    expect(() => new savingsAccount('123456', 'kohli@', 'Virat', 'Kohli')).toThrow('Invalid e-mail');
   });
 
   test('should throw error if account number length is not equal to 6', () => {
-    expect(() => new SavingsAccount('123456', 'kohli@gmail.com', 'V', 'Kohli')).toThrow('First name must be between 3 and 20 characters long');
+    expect(() => new savingsAccount('123456', 'kohli@gmail.com', 'V', 'Kohli')).toThrow('First name must be between 3 and 20 characters long');
   });
 
   test('should throw error if account number length is not equal to 6', () => {
-    expect(() => new SavingsAccount('123456', 'kohli@gmail.com', 'Virat', 'Kohli5')).toThrow('Last name must contain english alphabets only');
+    expect(() => new savingsAccount('123456', 'kohli@gmail.com', 'Virat', 'Kohli5')).toThrow('Last name must contain english alphabets only');
   });
 });
