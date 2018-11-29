@@ -1,6 +1,8 @@
 
-function squareNumbersArray(...args) {
-  return args;
+function squareNumbersArray(a) {
+ if(!Array.isArray(a)){
+    throw new Error('My custom error')
+ }
 }
 
 export {

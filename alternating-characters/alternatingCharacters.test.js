@@ -8,3 +8,10 @@ describe('alternatingCharacters', () => {
     expect(alternatingCharacters(['ABABBABAAB', 'BABAABBAAB', 'AAAABBAAAA', 'BABBABABBA', 'AABBBBAAAA', 'BAAAABBBBB', 'BBABAAAABB', 'BBBAAABBAB', 'BABAAABBBB', 'AAAABAABBB'])).toEqual([2, 3, 7, 2, 7, 7, 5, 5, 5, 6])
   });
 });
+
+
+
+
+
+
+.
