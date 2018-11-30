@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Ankaj Goyal",
+  "email": "ankajgoyal4@gmail.com",
+  "batch": "Batch 3",
   "exercises": {
     "permutate-without-repetitions": {
       "completed": false,

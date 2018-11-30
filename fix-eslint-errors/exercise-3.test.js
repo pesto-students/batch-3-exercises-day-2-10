@@ -1,14 +1,16 @@
-var http = require('http');
-var net = require('net');
-var url = require('url');
-var zlib = require('zlib');
-var fs = require('fs');
-var server, proxy;
+const http = require('http');
+const net = require('net');
+const url = require('url');
+const zlib = require('zlib');
+const fs = require('fs');
 
-var axios = () => ({});
+let server;
+let proxy;
+
+const axios = () => ({});
 
 module.exports = {
-  tearDown: function (callback) {
+  tearDown(callback) {
     server.close();
     server = null;
     if (proxy) {
@@ -23,25 +25,26 @@ module.exports = {
     callback();
   },
 
-  testTimeout: function (test) {
-    server = http.createServer(function (req, res) {
-      setTimeout(function () {
+  testTimeout(test) {
+    server = http.createServer((req, res) => {
+      setTimeout(() => {
         res.end();
       }, 1000);
-    }).listen(4444, function () {
-      var success = false, failure = false;
-      var error;
+    }).listen(4444, () => {
+      let success = false;
+      let failure = false;
+      let error;
 
       axios.get('http://localhost:4444/', {
-        timeout: 250
-      }).then(function (res) {
+        timeout: 250,
+      }).then((res) => {
         success = true;
-      }).catch(function (err) {
+      }).catch((err) => {
         error = err;
         failure = true;
       });
 
-      setTimeout(function () {
+      setTimeout(() => {
         test.equal(success, false, 'request should not succeed');
         test.equal(failure, true, 'request should fail');
         test.equal(error.code, 'ECONNABORTED');
@@ -51,29 +54,29 @@ module.exports = {
     });
   },
 
-  testJSON: function (test) {
-    var data = {
+  testJSON(test) {
+    const data = {
       firstName: 'Fred',
       lastName: 'Flintstone',
       emailAddr: 'fred@example.com'
     };
 
-    server = http.createServer(function (req, res) {
+    server = http.createServer((req, res) => {
       res.setHeader('Content-Type', 'application/json;charset=utf-8');
       res.end(JSON.stringify(data));
-    }).listen(4444, function () {
-      axios.get('http://localhost:4444/').then(function (res) {
+    }).listen(4444, () => {
+      axios.get('http://localhost:4444/').then((res) => {
         test.deepEqual(res.data, data);
         test.done();
       });
     });
   },
 
-  testRedirect: function (test) {
-    var str = 'test response';
+  testRedirect(test) {
+    const str = 'test response';
 
-    server = http.createServer(function (req, res) {
-      var parsed = url.parse(req.url);
+    server = http.createServer((req, res) => {
+      const parsed = url.parse(req.url);
 
       if (parsed.pathname === '/one') {
         res.setHeader('Location', '/two');
@@ -82,8 +85,8 @@ module.exports = {
       } else {
         res.end(str);
       }
-    }).listen(4444, function () {
-      axios.get('http://localhost:4444/one').then(function (res) {
+    }).listen(4444, () => {
+      axios.get('http://localhost:4444/one').then((res) => {
         test.equal(res.data, str);
         test.equal(res.request.path, '/two');
         test.done();
@@ -91,110 +94,109 @@ module.exports = {
     });
   },
 
-  testNoRedirect: function (test) {
-    server = http.createServer(function (req, res) {
+  testNoRedirect(test) {
+    server = http.createServer((req, res) => {
       res.setHeader('Location', '/foo');
       res.statusCode = 302;
       res.end();
-    }).listen(4444, function () {
+    }).listen(4444, () => {
       axios.get('http://localhost:4444/', {
         maxRedirects: 0,
-        validateStatus: function () {
+        validateStatus() {
           return true;
         }
-      }).then(function (res) {
+      }).then((res) => {
         test.equal(res.status, 302);
-        test.equal(res.headers['location'], '/foo');
+        test.equal(res.headers.location, '/foo');
         test.done();
       });
     });
   },
 
-  testMaxRedirects: function (test) {
-    var i = 1;
-    server = http.createServer(function (req, res) {
-      res.setHeader('Location', '/' + i);
+  testMaxRedirects(test) {
+    let i = 1;
+    server = http.createServer((req, res) => {
+      res.setHeader('Location'+ '/' + i);
       res.statusCode = 302;
       res.end();
-      i++;
-    }).listen(4444, function () {
+      i += 1;
+    }).listen(4444, () => {
       axios.get('http://localhost:4444/', {
-        maxRedirects: 3
-      }).catch(function (error) {
+        maxRedirects: 3,
+      }).catch((error) => {
         test.done();
       });
     });
   },
 
-  testTransparentGunzip: function (test) {
-    var data = {
+  testTransparentGunzip(test) {
+    const data = {
       firstName: 'Fred',
       lastName: 'Flintstone',
       emailAddr: 'fred@example.com'
     };
 
-    zlib.gzip(JSON.stringify(data), function(err, zipped) {
+    zlib.gzip(JSON.stringify(data), (err, zipped) => {
 
-      server = http.createServer(function (req, res) {
+      server = http.createServer((req, res) => {
         res.setHeader('Content-Type', 'application/json;charset=utf-8');
         res.setHeader('Content-Encoding', 'gzip');
         res.end(zipped);
-      }).listen(4444, function () {
-        axios.get('http://localhost:4444/').then(function (res) {
+      }).listen(4444, () => {
+        axios.get('http://localhost:4444/').then((res) => {
           test.deepEqual(res.data, data);
           test.done();
         });
       });
-
     });
   },
 
-  testGunzipErrorHandling: function (test) {
-    server = http.createServer(function (req, res) {
+  testGunzipErrorHandling(test) {
+    server = http.createServer((req, res) => {
       res.setHeader('Content-Type', 'application/json;charset=utf-8');
       res.setHeader('Content-Encoding', 'gzip');
       res.end('invalid response');
-    }).listen(4444, function () {
-      axios.get('http://localhost:4444/').catch(function (error) {
+    }).listen(4444, () => {
+      axios.get('http://localhost:4444/').catch((error) => {
         test.done();
       });
     });
   },
 
-  testUTF8: function (test) {
-    var str = Array(100000).join('ж');
+  testUTF8(test) {
+    const str = Array(100000).join('ж');
 
-    server = http.createServer(function (req, res) {
+    server = http.createServer((req, res)  => {
       res.setHeader('Content-Type', 'text/html; charset=UTF-8');
       res.end(str);
-    }).listen(4444, function () {
-      axios.get('http://localhost:4444/').then(function (res) {
+    }).listen(4444, () => {
+      axios.get('http://localhost:4444/').then((res) => {
         test.equal(res.data, str);
         test.done();
       });
     });
   },
 
-  testBasicAuth: function (test) {
-    server = http.createServer(function (req, res) {
+  testBasicAuth(test) {
+    server = http.createServer((req, res) => {
       res.end(req.headers.authorization);
-    }).listen(4444, function () {
-      var user = 'foo';
-      var headers = { Authorization: 'Bearer 1234' };
-      axios.get('http://' + user + '@localhost:4444/', { headers: headers }).then(function (res) {
-        var base64 = new Buffer(user + ':', 'utf8').toString('base64');
+    }).listen(4444, () => {
+      const user = 'foo';
+      const headers = { Authorization: 'Bearer 1234' };
+      axios.get('http://' + user + '@localhost:4444/', { headers: headers }).then((res) => {
+        const base64 = new Buffer(user + ':', 'utf8').toString('base64');
         test.equal(res.data, 'Basic ' + base64);
         test.done();
       });
     });
   },
 
-  testBasicAuthWithHeader: function (test) {
-    server = http.createServer(function (req, res) {
+  testBasicAuthWithHeader(test) {
+    server = http.createServer((req, res) => {
       res.end(req.headers.authorization);
-    }).listen(4444, function () {
-      var auth = { username: 'foo', password: 'bar' };
-      var headers = { Authorization: 'Bearer 1234' };
+    }).listen(4444, () => {
+      const auth = { username: 'foo', password: 'bar' };
+      const headers = { Authorization: 'Bearer 1234' };
       axios.get('http://localhost:4444/', { auth: auth, headers: headers }).then(function (res) {
         var base64 = new Buffer('foo:bar', 'utf8').toString('base64');
         test.equal(res.data, 'Basic ' + base64);
@@ -203,14 +205,14 @@ module.exports = {
     });
   },
 
-  testMaxContentLength: function(test) {
-    var str = Array(100000).join('ж');
+  testMaxContentLength(test) {
+    const str = Array(100000).join('ж');
 
-    server = http.createServer(function (req, res) {
+    server = http.createServer((req, res) => {
       res.setHeader('Content-Type', 'text/html; charset=UTF-8');
       res.end(str);
     }).listen(4444, function () {
-      var success = false, failure = false, error;
+      const success = false, failure = false;
 
       axios.get('http://localhost:4444/', {
         maxContentLength: 2000
@@ -528,8 +530,8 @@ module.exports = {
     });
   },
 
-  testCancel: function(test) {
-    var source = axios.CancelToken.source();
+  testCancel(test) {
+    const source = axios.CancelToken.source();
     server = http.createServer(function (req, res) {
       // call cancel() when the request has been sent, but a response has not been received
       source.cancel('Operation has been canceled.');

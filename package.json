@@ -19,6 +19,7 @@
     "eslint": "*",
     "eslint-config-airbnb": "*",
     "eslint-plugin-import": "*",
+    "eslint-plugin-jasmine": "^2.10.1",
     "eslint-plugin-jsx-a11y": "*",
     "eslint-plugin-react": "*",
     "husky": "*",
@@ -31,6 +32,8 @@
     }
   },
   "lint-staged": {
-    "!(*.test).js": ["eslint"]
+    "!(*.test).js": [
+      "eslint"
+    ]
   }
 }

@@ -1,12 +1,12 @@
-var assert = require("assert");
+const assert = require('assert');
 
 function promised(val) {
-    return new Promise(function(f) {
+  return new Promise(function(f) {
         setTimeout(function() {
-            f(val);
-        }, 1);
-    });
-}
+            f(val); 
+  });
+},
+
 
 function thenabled(val, arr) {
     return {
@@ -17,7 +17,7 @@ function thenabled(val, arr) {
             }, 1);
         }
     };
-}
+},
 
 describe("Promise.each", function() {
 
@@ -85,7 +85,7 @@ describe("Promise.each", function() {
             assert.deepEqual(b, [1,2]);
         });
     });
-});
+}),
 
 describe("Promise.prototype.each", function() {
 
@@ -178,3 +178,4 @@ describe("mapSeries and each", function() {
         });
     })
 });
+}
