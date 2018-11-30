@@ -4,12 +4,12 @@
   "batch": "Batch Number",
   "exercises": {
     "boolean": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "days-in-month": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "json-parse": {
       "completed": false,
@@ -20,8 +20,8 @@
       "rating": null
     },
     "math-fns": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "parse-ms": {
       "completed": false,
@@ -44,8 +44,8 @@
       "rating": null
     },
     "alien-alphabet": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "permutate-with-repetitions": {
       "completed": false,

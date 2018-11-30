@@ -1,6 +1,6 @@
 
-function abbreviateString(...args) {
-  return args;
+function abbreviateString(str) {
+  
 }
 
 export {

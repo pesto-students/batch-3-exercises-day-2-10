@@ -1,8 +1,9 @@
 
-function boolean(...args) {
-  return args;
+function bool(...args) {
+  return true;
+  
 }
-
+let boolean   = bool();
 export {
   boolean,
 };
