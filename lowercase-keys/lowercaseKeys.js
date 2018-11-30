@@ -1,5 +1,6 @@
 
-function lowercaseKeys(...args) {
+function lowercaseKeys(obj) {
+  
   return args;
 }
 
