@@ -8,8 +8,8 @@
       "rating": null
     },
     "days-in-month": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "json-parse": {
       "completed": false,
