@@ -40,8 +40,8 @@
       "rating": 4
     },
     "print-full-name": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 5
     },
     "sum-even-args": {
       "completed": false,
