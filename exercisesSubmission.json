@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Shikhar Dubey",
+  "email": "shikhar.db@gmail.com",
+  "batch": "3",
   "exercises": {
     "bind": {
       "completed": false,
@@ -20,8 +20,8 @@
       "rating": null
     },
     "double-odd-numbers": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "instructor": {
       "completed": false,
