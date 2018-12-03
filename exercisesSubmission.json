@@ -8,8 +8,8 @@
       "rating": null
     },
     "all-promises": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "greet": {
       "completed": false,

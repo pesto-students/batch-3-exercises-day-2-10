@@ -1,5 +1,5 @@
 
-function alphabeticShift(...args) {
+function alphabeticShift(args) {
   return args;
 }
 
