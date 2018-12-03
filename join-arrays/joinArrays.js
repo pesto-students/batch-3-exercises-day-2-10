@@ -1,9 +1,5 @@
-const joinedArray = [];
 function joinArrays(...args) {
-  for (const element of args) {
-    if (!Array.isArray(element)) joinedArray.push(element);
-    else joinArrays(element);
-  }
+  const joinedArray = [].concat(...args);
   return joinedArray;
 }
 
