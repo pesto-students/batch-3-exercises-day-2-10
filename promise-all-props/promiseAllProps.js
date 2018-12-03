@@ -1,8 +1,7 @@
-
-function promiseAllProps(...args) {
-  return args;
+function promiseAllProps(args) {
+  return new Promise((resolve) => {
+    resolve(Promise.all(args));
+  });
 }
 
-export {
-  promiseAllProps,
-};
+export { promiseAllProps };

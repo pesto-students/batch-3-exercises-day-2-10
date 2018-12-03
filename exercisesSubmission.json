@@ -40,8 +40,8 @@
       "rating": null
     },
     "promise-all-props": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "sleep-promise": {
       "completed": false,
