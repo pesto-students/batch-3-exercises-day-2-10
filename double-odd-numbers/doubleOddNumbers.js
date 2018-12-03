@@ -5,7 +5,7 @@ function doubleOddNumbers(args) {
   //     return undefined;
   //   })
   //   .filter((element) => {
-  //     if (element) return element;
+  //     return element;
   //   });
 
   const oddDoubled = [];
