@@ -16,8 +16,8 @@
       "rating": 4
     },
     "reject-promise": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "queue": {
       "completed": false,
@@ -36,12 +36,12 @@
       "rating": null
     },
     "is-promise": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "promise-all-props": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "sleep-promise": {
       "completed": false,
