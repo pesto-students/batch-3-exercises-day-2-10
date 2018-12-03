@@ -1,8 +1,5 @@
-
-function joinArrays(...args) {
-  return args;
+function joinArrays(...arr) {
+  return [].concat(...arr);
 }
 
-export {
-  joinArrays,
-};
+export { joinArrays };
