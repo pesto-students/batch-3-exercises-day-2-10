@@ -36,8 +36,8 @@
       "rating": 1
     },
     "is-promise": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "promise-all-props": {
       "completed": true,
