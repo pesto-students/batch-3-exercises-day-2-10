@@ -16,8 +16,8 @@
       "rating": 1
     },
     "create-student": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "double-odd-numbers": {
       "completed": true,
