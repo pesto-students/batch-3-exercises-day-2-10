@@ -1,19 +1,19 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Abhinav Kumar",
+  "email": "abhinav95@hotmail.com",
+  "batch": "3",
   "exercises": {
     "bind": {
       "completed": false,
       "rating": null
     },
     "block-scoping": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "const-immutable": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "create-student": {
       "completed": false,
