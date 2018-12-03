@@ -1,15 +1,15 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Shikhar Dubey",
+  "email": "shikhar.db@gmail.com",
+  "batch": "3",
   "exercises": {
     "alphabetic-shift": {
       "completed": false,
       "rating": null
     },
     "all-promises": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "greet": {
       "completed": false,
