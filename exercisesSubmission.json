@@ -12,8 +12,8 @@
       "rating": 1
     },
     "const-immutable": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "create-student": {
       "completed": false,
