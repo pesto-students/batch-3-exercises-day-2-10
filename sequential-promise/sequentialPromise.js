@@ -1,6 +1,8 @@
 
 function sequentialPromise(...args) {
-  return args;
+  console.log('The values are');
+  console.log(args);
+
 }
 
 export {

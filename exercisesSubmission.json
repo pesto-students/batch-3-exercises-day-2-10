@@ -8,16 +8,16 @@
       "rating": null
     },
     "all-promises": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "greet": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "reject-promise": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "queue": {
       "completed": false,
@@ -25,19 +25,19 @@
     },
     "person": {
       "completed": false,
-      "rating": null
+      "rating": 4
     },
     "sequential-promise": {
       "completed": false,
       "rating": null
     },
     "timeout": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "is-promise": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "promise-all-props": {
       "completed": false,

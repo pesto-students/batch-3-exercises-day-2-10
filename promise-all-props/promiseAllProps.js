@@ -1,7 +1,12 @@
 
 function promiseAllProps(...args) {
-  return args;
+  let obj = {};
+  return new Promise((resolve) => {
+    
+  })
+  
 }
+
 
 export {
   promiseAllProps,
