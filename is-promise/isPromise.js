@@ -1,8 +1,7 @@
-
-function isPromise(...args) {
-  return args;
+function isPromise(args) {
+  return new Promise((resolve) => {
+    resolve(args instanceof Promise);
+  });
 }
 
-export {
-  isPromise,
-};
+export { isPromise };
