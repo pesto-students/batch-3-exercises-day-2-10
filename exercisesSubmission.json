@@ -24,8 +24,8 @@
       "rating": null
     },
     "arithmetic-expression-evaluator": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 5
     },
     "array-addition": {
       "completed": true,
