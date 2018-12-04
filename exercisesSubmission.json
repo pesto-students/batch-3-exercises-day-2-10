@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Ankaj Goyal",
+  "email": "ankajgoyal4@gmail.com",
+  "batch": "Batch 3",
   "exercises": {
     "built-in-iterables": {
       "completed": false,
@@ -32,8 +32,8 @@
       "rating": null
     },
     "array-cube-root-to-json": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "object-assign": {
       "completed": false,
