@@ -32,8 +32,8 @@
       "rating": null
     },
     "range-iter": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "simple-iterable": {
       "completed": true,
