@@ -1,5 +1,7 @@
 
-function animalSort(...args) {
+function animalSort(obj) {
+  let obj = {};
+  for()
   return args;
 }
 
