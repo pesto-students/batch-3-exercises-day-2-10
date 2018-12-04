@@ -36,8 +36,8 @@
       "rating": 2
     },
     "object-assign": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     }
   }
 }
