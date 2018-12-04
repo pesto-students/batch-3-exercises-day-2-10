@@ -24,12 +24,12 @@
       "rating": null
     },
     "is-iterable": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "is-iterable-empty": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "range-iter": {
       "completed": true,

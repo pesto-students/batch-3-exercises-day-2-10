@@ -1,8 +1,6 @@
-
-function isIterable(...args) {
-  return args;
+function isIterable(args) {
+  if (typeof args[Symbol.iterator] === 'function') return true;
+  return false;
 }
 
-export {
-  isIterable,
-};
+export { isIterable };
