@@ -20,8 +20,8 @@
       "rating": null
     },
     "iterable-protocol": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "is-iterable": {
       "completed": true,
