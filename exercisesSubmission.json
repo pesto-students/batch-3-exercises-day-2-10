@@ -20,8 +20,8 @@
       "rating": null
     },
     "args-string": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "arithmetic-expression-evaluator": {
       "completed": false,
