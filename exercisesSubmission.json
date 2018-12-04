@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Ankaj Goyal",
+  "email": "ankajgoyal4@gmail.com",
+  "batch": "Batch 3",
   "exercises": {
     "consumable-users": {
       "completed": false,
@@ -36,8 +36,8 @@
       "rating": null
     },
     "simple-iterable": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     }
   }
 }
