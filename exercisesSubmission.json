@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Shikhar Dubey",
+  "email": "shikhar.db@gmail.com",
+  "batch": "3",
   "exercises": {
     "consumable-users": {
       "completed": false,
@@ -24,8 +24,8 @@
       "rating": null
     },
     "is-iterable": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "is-iterable-empty": {
       "completed": false,
