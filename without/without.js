@@ -1,10 +1,12 @@
 
 function without(a, b) {
-  if (a !== b) {
-    const arr = b.filter(e => a.indexOf(e) === -1);
-    return arr;
+  const c = a.toString();
+  const d = b.toString();
+  const arr = b.filter(e => c.indexOf(e) === -1);
+  if (arr.length === 0) {
+    return 0;
   }
-  return 0;
+  return arr;
 }
 
 export {
