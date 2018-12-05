@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Shikhar Dubey",
+  "email": "shihkhar.db@gmail.com",
+  "batch": "3",
   "exercises": {
     "on-change": {
       "completed": false,
@@ -12,8 +12,8 @@
       "rating": null
     },
     "known-prop": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "negative-index": {
       "completed": false,
