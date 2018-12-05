@@ -10,4 +10,4 @@ Returns a new list without values in the first argument.
 
 ```js
 without([1, 2], [1, 2, 1, 3, 4]); //=> [3, 4]
-```
+```s
