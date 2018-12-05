@@ -24,8 +24,8 @@
       "rating": null
     },
     "slice": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 3
     },
     "split-every": {
       "completed": false,
