@@ -36,8 +36,8 @@
       "rating": 1
     },
     "svg": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "table": {
       "completed": false,
