@@ -8,8 +8,8 @@
       "rating": null
     },
     "knuth-morris-pratt": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "longest-common-substring": {
       "completed": false,
