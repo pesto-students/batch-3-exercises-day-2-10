@@ -36,8 +36,8 @@
       "rating": null
     },
     "form": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "html-classes": {
       "completed": false,
