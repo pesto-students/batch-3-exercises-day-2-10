@@ -52,8 +52,8 @@
       "rating": 4
     },
     "navigation-menu-start": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "strikeout": {
       "completed": true,
