@@ -48,8 +48,8 @@
       "rating": 4
     },
     "iframe": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "navigation-menu-start": {
       "completed": false,
