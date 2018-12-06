@@ -32,12 +32,12 @@
       "rating": null
     },
     "form-attributes": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "form": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "html-classes": {
       "completed": false,
