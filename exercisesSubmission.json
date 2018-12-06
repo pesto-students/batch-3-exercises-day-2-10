@@ -32,8 +32,8 @@
       "rating": 1
     },
     "form-attributes": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "form": {
       "completed": true,
