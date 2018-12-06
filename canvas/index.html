@@ -1,1 +1,32 @@
-Make some complex figures using canvas.
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML CANVAS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      aria-label="My Canvas"
+      width="200px"
+      height="200px"
+      style="border: solid"
+    >
+    </canvas>
+    <script>
+      var c = document.getElementById('myCanvas');
+      var ctx = c.getContext('2d');
+      ctx.beginPath();
+      var counter = 0;
+      while (counter < (Math.floor(Math.random()*200) + 1)) {
+        ctx.arc(50 + counter, 50 + counter, 40, 0, 2 * Math.PI);
+        counter += 10;
+      }
+      ctx.moveTo(0,0);
+      ctx.lineTo(200,200);
+      ctx.stroke();
+    </script>
+  </body>
+</html>

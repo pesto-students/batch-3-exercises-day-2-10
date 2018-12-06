@@ -24,8 +24,8 @@
       "rating": 4
     },
     "canvas": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 5
     },
     "form-validation": {
       "completed": false,
