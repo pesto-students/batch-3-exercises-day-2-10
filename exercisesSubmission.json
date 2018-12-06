@@ -4,8 +4,8 @@
   "batch": "Batch Number",
   "exercises": {
     "hamming-distance": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "knuth-morris-pratt": {
       "completed": false,
@@ -28,8 +28,8 @@
       "rating": null
     },
     "debugging-html": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 4
     },
     "form-attributes": {
       "completed": true,
