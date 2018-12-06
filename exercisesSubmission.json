@@ -40,8 +40,8 @@
       "rating": 1
     },
     "html-classes": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "html-text-formatting": {
       "completed": false,
