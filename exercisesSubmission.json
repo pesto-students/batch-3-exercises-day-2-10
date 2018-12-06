@@ -56,8 +56,8 @@
       "rating": 1
     },
     "strikeout": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "tooltip": {
       "completed": false,
