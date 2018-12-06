@@ -1,16 +1,63 @@
-<!-- CHoose your favourite image from the internet.
-Define different clickable areas on the image.
-Clicking on the areas should open different link in a new tab. -->
+<!--
+  CHoose your favourite image from the internet.
+  Define different clickable areas on the image.
+  Clicking on the areas should open different link in a new tab.
+-->
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <img
+      src="http://www.thatcutesite.com/uploads/2010/12/fluffy_white_dog.jpg"
+      usemap="#image-map"
+    />
+
+    <map name="image-map">
+      <area
+        target="_blank"
+        alt="Go to 9GAG"
+        title="Go to 9GAG"
+        href="http://9gag.com"
+        coords="0,201,266,0"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="Go to XKCD"
+        title="Go to XKCD"
+        href="http://xkcd.com"
+        coords="0,201,274,336"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="Commit Strip"
+        title="Commit Strip"
+        href="http://commitstrip.com"
+        coords="275,215,600,1"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="The Verge"
+        title="The Verge"
+        href="http://theverge.com"
+        coords="598,215,277,337"
+        shape="rect"
+      />
+    </map>
+  </body>
 </html>
