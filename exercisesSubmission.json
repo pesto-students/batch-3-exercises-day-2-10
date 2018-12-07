@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Abhinav Kumar",
+  "email": "abhinav95@hotmail.com",
+  "batch": "3",
   "exercises": {
     "power-set": {
       "completed": false,
@@ -20,8 +20,8 @@
       "rating": null
     },
     "advanced-box-effects": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 5
     },
     "animation": {
       "completed": false,
