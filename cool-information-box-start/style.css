@@ -3,3 +3,15 @@ html {
 }
 
 /* Your CSS below here */
+#coolbox{
+  background: red;
+  padding: 20px;
+  border: 1px;
+  border-bottom-style: solid;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: brown;
+  width: 200px;
+}
