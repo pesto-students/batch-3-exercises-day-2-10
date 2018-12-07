@@ -1,6 +1,7 @@
 
-function deepCopyObject(...args) {
-  return args;
+function deepCopyObject(obj) {
+  const newobj = JSON.parse(JSON.stringify(obj));
+  return newobj;
 }
 
 export {
