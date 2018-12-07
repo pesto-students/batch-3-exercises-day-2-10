@@ -32,8 +32,8 @@
       "rating": 2
     },
     "floats": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "grids": {
       "completed": false,
