@@ -28,8 +28,8 @@
       "rating": 1
     },
     "debugging-css": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 1
     },
     "fundamental-css-comprehension": {
       "completed": false,
