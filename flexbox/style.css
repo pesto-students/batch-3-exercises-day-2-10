@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 150px;
+  background: #900390;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  text-align: center;
+  line-height: 150px;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  background: #0dffff;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 5px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.third-article {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+button {
+  flex: 1;
+}
