@@ -39,3 +39,20 @@ h1 {
 }
 
 /* Your CSS below here */
+
+article {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  align-items: flex-end;
+  /* flex: auto; */
+  margin-top: 771px;
+}
+
+img.logo {
+  margin-top: -82px;
+  margin-left: 65px;
+}
