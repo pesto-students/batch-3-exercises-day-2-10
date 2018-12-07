@@ -1,8 +1,5 @@
-
-function deepCopyObject(...args) {
-  return args;
+function deepCopyObject(args) {
+  return JSON.parse(JSON.stringify(args));
 }
 
-export {
-  deepCopyObject,
-};
+export { deepCopyObject };

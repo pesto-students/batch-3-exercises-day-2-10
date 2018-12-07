@@ -1,7 +1,7 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Shikhar Dubey",
+  "email": "shikhar.db@gmail.com",
+  "batch": "3",
   "exercises": {
     "power-set": {
       "completed": false,
@@ -16,8 +16,8 @@
       "rating": null
     },
     "deep-copy-object": {
-      "completed": false,
-      "rating": null
+      "completed": true,
+      "rating": 2
     },
     "advanced-box-effects": {
       "completed": false,
