@@ -39,8 +39,5 @@ p {
   flex-flow: column;
   justify-content: space-around;
   text-align: center;
-}
-
-button {
-  flex: 1;
+  flex: 1 1 250%;
 }
